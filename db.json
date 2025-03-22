@@ -1,0 +1,9 @@
+{
+    "characters": [
+        {"id": 1, "name": "Elsword", "age": 13, "weapon": "Great Sword", "class": "Magical"},
+        {"id": 2, "name": "Rena", "age": "unknown", "weapon": "Bow", "class": "Magical"},
+        {"id": 3, "name": "Lu/Ciel", "age": "unknown/24", "weapon": "Magic Gauntlets, Demon Claws, Gun Blades", "class": "Physical"},
+        {"id": 4, "name": "Rose", "age": 19, "weapon": "HeavyWeaponry", "class": "Magical"},
+        {"id": 5, "name": "Laby", "age": "unknown", "weapon": "Mirror", "class": "Physical"}
+    ]
+}

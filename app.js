@@ -1,28 +1,22 @@
-const characterData = [
-   {id: 1, name: 'Elsword', age: 13, weapon: 'Great Sword', class: 'Magical'},
-   {id: 2, name: 'Rena', age: 'unkown', weapon: 'Bow', class: 'Magical'},
-   {id: 3, name: 'Lu/Ciel', age: 'unknown/24', weapon: 'Magic Gauntlets, Demon Claws, Gun Blades' , class: 'Physical'},
-   {id: 4, name: 'Rose', age: 19, weapon: 'HeavyWeaponry', class: 'Magical'},
-   {id: 5, name: 'Laby', age: 'unknown', weapon: 'Mirror', class: 'Physical'},
-];
+import { Character } from './character.js';
 
 function showCharacters() {
-    const characterLijst = document.getElementById('character-lijst');
+const characterLijst = document.getElementById('character-lijst');
+const template = document.getElementById('character-template');
 
-    characterData.forEach(character => {
-        const button = document.createElement('button');
+fetch('https://my-json-server.typicode.com/6030161/elsword-js-toets/characters')
+
+.then(response => response.json()).then(data => {
+    data.forEach(characterData => {
+        const character = new Character(characterData.id, characterData.name, characterData.age, characterData.weapon, characterData.class);
+        const button = template.content.cloneNode(true).querySelector('button');
         button.innerText = character.name;
-        button.onclick = () => showCharactersInfo(character);
-        characterLijst.appendChild(button);
-    })
-}
- // 
+        button.onclick = () => character.showCharacterInfo();
 
-function showCharactersInfo(character) { 
-  document.getElementById('char-name').innerText = `Name: ${character.name}`;
-  document.getElementById('char-age').innerText = `Age: ${character.age}`;
-  document.getElementById('char-weapon').innerText = `Weapon: ${character.weapon}`; 
-  document.getElementById('char-class').innerText = `Class: ${character.class}`;
+        characterLijst.appendChild(button);
+    });
+}) .catch(error => console.log('data kan niet gefetched worden', error));
+
 }
 
 window.onload = showCharacters;

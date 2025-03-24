@@ -17,7 +17,6 @@ fetch('https://my-json-server.typicode.com/6030161/elsword-js-toets/characters')
     });
 }) .catch(error => console.log('data kan niet gefetched worden', error));
 
-}
-
+}        
 window.onload = showCharacters;
 

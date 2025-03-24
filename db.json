@@ -4,6 +4,11 @@
         {"id": 2, "name": "Rena", "age": "unknown", "weapon": "Bow", "class": "Magical"},
         {"id": 3, "name": "Lu/Ciel", "age": "unknown/24", "weapon": "Magic Gauntlets, Demon Claws, Gun Blades", "class": "Physical"},
         {"id": 4, "name": "Rose", "age": 19, "weapon": "HeavyWeaponry", "class": "Magical"},
-        {"id": 5, "name": "Laby", "age": "unknown", "weapon": "Mirror", "class": "Physical"}
+        {"id": 5, "name": "Laby", "age": "unknown", "weapon": "Mirror", "class": "Physical"},
+        {"id": 6,"name": "Chung", "age": 18, "weapon": "Cannon", "class": "Physical"},
+        {"id": 7, "name": "Add", "age": 16, "weapon": "Nasod Dynamo", "class": "Magical"},
+        {"id": 8, "name": "Lithia", "age": 17, "weapon": "Pickaxe, Gemstones, Sling ", "class": "Physical"},
+        {"id": 9, "name": "Ain", "age": 21, "weapon": "Pendium, Projection Weapons", "class": "Magical"},
+        {"id": 10, "name": "Elesis", "age": 16, "weapon": "Claymore, Power of Flames", "class": "Physical"}
     ]
-}
+}     
